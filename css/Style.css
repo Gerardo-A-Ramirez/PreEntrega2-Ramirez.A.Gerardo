@@ -3,6 +3,11 @@
     background-color: #1E736C;
 }
 
+.body_trabajos{
+padding-bottom: 0px;
+margin-bottom: 0px;
+}
+
 nav{
     margin: 0px;
     padding: 0px;
@@ -278,6 +283,8 @@ footer{
     background-color:#1E736C ;
     padding: 0rem;
     margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .carousel-inner{
     max-width: 700px;
