@@ -1,0 +1,154 @@
+/* Estilo Index */
+
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2019/04/10/12/40/watercolor-4117017_1280.png);
+    padding: 0;
+}
+
+
+/* Estilo del Navegador */
+.nav {
+    font-size: 35px;
+    line-height: 2;
+    font-family: 'Chakra Petch', sans-serif;
+    text-align: left;
+    border: 10px;
+    padding-left: 30;
+
+}
+
+li {
+    display: inline;
+    border-style: double;
+    border-radius: 30%;
+    background-color: bisque;
+    padding-left: 50;
+}
+
+img[alt=banner] {
+    width: 2000px;
+    align-self: center;
+    margin: 0;
+    padding-left: 50;
+}
+
+
+#menu {
+    padding-left: 10;
+    padding-top: 10;
+    padding-bottom: 10;
+    padding-right: 10;
+    box-sizing: content-box;
+}
+
+/* Estilo del titulo del index */
+h1 {
+    font-size: 45px;
+    font-family: 'Chakra Petch', sans-serif;
+    padding-left: 100px;
+    display: inline-block;
+
+}
+
+/* Estilo del primer texto */
+#textoPersonalizado {
+    font-family: 'Permanent Marker', cursive;
+    display: inline-block;
+    padding: 10px;
+    box-sizing: content-box;
+    text-align: center;
+    margin: 20px;
+    border-radius: 5px;
+    border: groove blue;
+    background-color: yellowgreen;
+    position: relative;
+    font-size: 45px;
+}
+
+/* Estilo del segundo texto */
+#textoPersonalizado2 {
+    font-family: 'Permanent Marker', cursive;
+    display: inline-block;
+    padding: 10px;
+    box-sizing: content-box;
+    text-align: center;
+    margin: 20px;
+    border-radius: 5px;
+    border: groove blue;
+    background-color: yellowgreen;
+    position: relative;
+    font-size: 45px;
+}
+
+/* Estilo imagenes */
+img[alt=billetera] {
+    position: relative;
+    width: 287px;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 10%;
+
+}
+
+img[alt=botella] {
+    position: relative;
+    width: 287px;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 10%;
+}
+
+img[alt=buzo] {
+    position: relative;
+    width: 255px;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 10%;
+}
+
+img[alt=taza] {
+    position: relative;
+    width: 210px;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 10%;
+}
+
+img[alt=mousepad] {
+    position: relative;
+    width: 720px;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 10%;
+}
+
+img[alt=mousepadMini] {
+    position: relative;
+    width: 300px;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 10%;
+}
+
+img[alt=remera] {
+    position: relative;
+    width: 490px;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 10%;
+}
+
+img[alt=vaso] {
+    position: relative;
+    width: 360px;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 10%;
+}
+
+footer {
+    position: absolute left: 0;
+    bottom: 0;
+    width: 300px;
+    font-size: 60px;
+}
