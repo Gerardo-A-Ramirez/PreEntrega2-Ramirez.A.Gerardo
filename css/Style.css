@@ -306,14 +306,14 @@ footer {
 }
 
 .carousel-inner {
-    max-width: 700px;
+    max-width: 400px;
     align-content: center;
     margin: auto;
     margin-top: 0Px;
 }
 
 .carousel {
-    width: 700px;
+    width: 600px;
     margin: auto;
     padding-bottom: 0px;
 }
@@ -365,7 +365,7 @@ label {
 }
 
 .Texto-Trabajos {
-    font-size: 2rem;
+    font-size: 24px;
     border: solid;
     border-radius: 10px;
     background-color: #08D5A3;
