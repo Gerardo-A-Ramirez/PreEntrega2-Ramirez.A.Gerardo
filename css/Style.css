@@ -1,7 +1,17 @@
-@charset "UTF-8";
 /* Maquetación Index */
 .body-index {
   background-color: #1E736C;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.section-trabajosPersonalizados {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  width: 100%;
+  height: 100%;
 }
 
 nav {
@@ -16,7 +26,7 @@ nav {
 }
 
 .navbar-brand {
-  font-family: "Chakra Petch", sans-serif;
+  font-family: 'Chakra Petch', sans-serif;
   box-sizing: content-box;
   padding: 0px;
   margin: 0px;
@@ -41,7 +51,7 @@ a:hover {
 
 .nav-item {
   background-color: #08D5A3;
-  font-family: "Chakra Petch", sans-serif;
+  font-family: 'Chakra Petch', sans-serif;
   text-decoration: none;
   font-size: 1.5rem;
   box-sizing: content-box;
@@ -69,7 +79,7 @@ img[alt=banner] {
   display: flex;
   border-radius: 1em;
   object-fit: scale-down;
-  background-size: contain;
+  background-size: contain
 }
 
 img[alt=banner-query] {
@@ -84,20 +94,23 @@ img[alt=banner-query] {
 }
 
 /* Query banner */
+
 @media screen and (max-width: 1000px) {
   img[alt=banner-query] {
-    display: flex;
-    align-self: center;
-    margin: auto;
-    box-sizing: 100vh;
-    border-radius: 1em;
-    object-fit: scale-down;
-    background-size: contain;
+      display: flex;
+      align-self: center;
+      margin: auto;
+      box-sizing: 100vh;
+      border-radius: 1em;
+      object-fit: scale-down;
+      background-size: contain;
   }
+
   .bannerImg {
-    display: none;
+      display: none;
   }
 }
+
 img[alt=billetera] {
   position: relative;
   width: 287px;
@@ -105,6 +118,7 @@ img[alt=billetera] {
   border-style: solid;
   border-radius: 10%;
   object-fit: cover;
+
 }
 
 img[alt=botella] {
@@ -164,66 +178,87 @@ img[alt=vaso] {
 }
 
 /* Query imágenes */
+
 @media screen and (max-width: 450px) {
+
   img[alt=billetera] {
-    position: relative;
-    width: 390px;
-    margin: 10px;
-    border-style: solid;
-    border-radius: 10%;
-    object-fit: cover;
+      position: relative;
+      width: 390px;
+      margin: 10px;
+      border-style: solid;
+      border-radius: 10%;
+      object-fit: cover;
+
   }
+
   img[alt=botella] {
-    position: relative;
-    width: 390px;
-    margin: 10px;
-    border-style: solid;
-    border-radius: 10%;
+      position: relative;
+      width: 390px;
+      margin: 10px;
+      border-style: solid;
+      border-radius: 10%;
   }
+
   img[alt=buzo] {
-    position: relative;
-    width: 390px;
-    margin: 10px;
-    border-style: solid;
-    border-radius: 10%;
+      position: relative;
+      width: 390px;
+      margin: 10px;
+      border-style: solid;
+      border-radius: 10%;
   }
+
   img[alt=taza] {
-    position: relative;
-    width: 390px;
-    margin: 10px;
-    border-style: solid;
-    border-radius: 10%;
+      position: relative;
+      width: 390px;
+      margin: 10px;
+      border-style: solid;
+      border-radius: 10%;
   }
+
   img[alt=mousepad] {
-    width: 390px;
-    position: relative;
-    margin: 10px;
-    border-style: solid;
-    border-radius: 10%;
-    background-size: contain;
+      width: 390px;
+      position: relative;
+      margin: 10px;
+      border-style: solid;
+      border-radius: 10%;
+      background-size: contain
   }
+
   img[alt=mousepadMini] {
-    position: relative;
-    width: 390px;
-    margin: 10px;
-    border-style: solid;
-    border-radius: 10%;
+      position: relative;
+      width: 390px;
+      margin: 10px;
+      border-style: solid;
+      border-radius: 10%;
   }
+
   img[alt=remera] {
-    position: relative;
-    width: 390px;
-    margin: 10px;
-    border-style: solid;
-    border-radius: 10%;
+      position: relative;
+      width: 390px;
+      margin: 10px;
+      border-style: solid;
+      border-radius: 10%;
   }
+
   img[alt=vaso] {
-    width: 390px;
-    margin: 10px;
-    border-style: solid;
-    border-radius: 10%;
+      width: 390px;
+      margin: 10px;
+      border-style: solid;
+      border-radius: 10%;
   }
 }
+
 /* Personalización del texto-Index */
+
+.col h1 {
+  border: solid;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: #08D5A3;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
 .col p {
   font-size: 1.4rem;
   padding-left: 10px;
@@ -233,6 +268,7 @@ img[alt=vaso] {
 }
 
 /* Maquetación footer */
+
 footer {
   background-color: #000;
   padding: 10px;
@@ -249,11 +285,13 @@ footer {
 
 .boton-footer {
   text-decoration: none;
-  color: aliceblue;
+  color: aliceblue
 }
 
 /* Personalización de Trabajos personalizados */
 /* Carousel de imagenes */
+
+
 .section-trabajosPersonalizados {
   background-color: #1E736C;
 }
@@ -263,17 +301,19 @@ footer {
   background-color: #1E736C;
   padding: 0rem;
   margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .carousel-inner {
-  max-width: 700px;
+  max-width: 400px;
   align-content: center;
   margin: auto;
   margin-top: 0Px;
 }
 
 .carousel {
-  width: 700px;
+  width: 600px;
   margin: auto;
   padding-bottom: 0px;
 }
@@ -283,6 +323,7 @@ footer {
   margin-bottom: 10px;
   display: flex;
 }
+
 
 img[alt=imagen-carousel] {
   width: 100px;
@@ -302,22 +343,92 @@ label {
 }
 
 /* Query Carrousel */
+
 @media screen and (max-width: 600px) {
   .section-carusel {
-    max-width: 410px;
-    margin: auto;
-    align-items: center;
-    align-content: center;
+      max-width: 410px;
+      margin: auto;
+      align-items: center;
+      align-content: center;
   }
+
   #carouselExampleFade div {
-    width: 400px;
-    align-items: center;
-    align-items: center;
+      width: 400px;
+      align-items: center;
+      align-items: center;
   }
+
   .footer {
-    align-items: flex-end;
-    align-content: flex-end;
+      align-items: flex-end;
+      align-content: flex-end;
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+.Texto-Trabajos {
+  font-size: 24px;
+  border: solid;
+  border-radius: 10px;
+  background-color: #08D5A3;
+  text-decoration: none;
+  padding-left: 5px;
+}
+
+.Texto-Trabajos a {
+  text-decoration: none;
+}
+
+.Texto-Trabajos:hover {
+  background-color: #1E8449;
+
+}
+
+
+/* Productos flex */
+
+.section-quienesSomos {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #08D5A3;
+}
+
+.section-quienesSomos p {
+  background-color: #08D5A3;
+  align-items: center;
+  align-content: center;
+  flex: grow 1;
+  font-size: 2rem;
+  flex-basis: 10px;
+  font-family: 'Chakra Petch', sans-serif;
+  font-family: 'Permanent Marker', cursive;
+
+}
+
+.section-quienesSomos .video {
+  align-items: center;
+  align-content: center;
+  background-color: #08D5A3;
+  align-self: center;
+  width: 100rem;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 400px) {
+  .section-quienesSomos video {
+      max-width: 400px;
+      order: 1;
+      margin-top: 0px;
+  }
+
+  .section-quienesSomos p {
+      font-size: 27.72px;
+      order: 2;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+  }
+}
