@@ -1,0 +1,33 @@
+{
+  "name": "proyectocoderhouse",
+  "version": "1.0.0",
+  "description": "Proyecto del curso de CoderHouse, Pagina web de una empresa ficticia llamada EtenaDiseño.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gerardo-A-Ramirez/PreEntrega2-Ramirez.A.Gerardo.git"
+  },
+  "keywords": [
+    "diseño",
+    "sublimación",
+    "geek",
+    "tazas",
+    "textiles",
+    "remeras",
+    "buzos",
+    "mousepad"
+  ],
+  "author": "Gerardo Alejandro Ramirez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gerardo-A-Ramirez/PreEntrega2-Ramirez.A.Gerardo/issues"
+  },
+  "homepage": "https://github.com/Gerardo-A-Ramirez/PreEntrega2-Ramirez.A.Gerardo#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.0",
+    "sass": "^1.63.6"
+  }
+}
