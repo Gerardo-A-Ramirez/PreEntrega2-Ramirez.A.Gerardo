@@ -1,0 +1,95 @@
+@use 'variables';
+
+/* Personalización de Trabajos personalizados */
+/* Carousel de imagenes */
+
+
+.section-trabajosPersonalizados {
+    background-color: variables.$color2;
+}
+
+.section-carusel {
+    display: flex;
+    background-color: variables.$color2;
+    padding: 0rem;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.carousel-inner {
+    max-width: 400px;
+    align-content: center;
+    margin: auto;
+    margin-top: 0Px;
+}
+
+.carousel {
+    width: 600px;
+    margin: auto;
+    padding-bottom: 0px;
+}
+
+.carousel-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+
+img[alt=imagen-carousel] {
+    width: 100px;
+    margin: 0px;
+    border: solid;
+}
+
+.label-personalizados {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    border: groove;
+    background-color: variables.$color3;
+}
+
+.imagen-carousel .img2 {
+    width: 10px;
+}
+
+/* Query Carrousel */
+
+@media screen and (max-width: 600px) {
+    .section-carusel {
+        max-width: 410px;
+        margin: auto;
+        align-items: center;
+        align-content: center;
+    }
+
+    #carouselExampleFade div {
+        width: 400px;
+        align-items: center;
+        align-items: center;
+    }
+
+    .footer {
+        align-items: flex-end;
+        align-content: flex-end;
+    }
+}
+
+.Texto-Trabajos {
+    font-size: 24px;
+    border: solid;
+    border-radius: 10px;
+    background-color: variables.$color4;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+.Texto-Trabajos a {
+    text-decoration: none;
+}
+
+.Texto-Trabajos:hover {
+    background-color: variables.$color1;
+
+}

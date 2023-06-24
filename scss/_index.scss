@@ -1,0 +1,270 @@
+@use 'variables';
+
+/* Maquetación Index */
+.body-index {
+    background-color: variables.$color2;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.section-trabajosPersonalizados {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-fluid {
+    background-color: variables.$color2;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-brand {
+    font-family: 'Chakra Petch', sans-serif;
+    box-sizing: content-box;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 0px;
+    border-radius: 0.5rem;
+    background-color: variables.$color3;
+}
+
+.nav-link {
+    font-size: 10px;
+}
+
+.navbar-brand:hover {
+    font-weight: 400px;
+}
+
+.nav-link:hover {
+    background-color: variables.$color3;
+    font-weight: bold;
+    border-radius: 10Px;
+}
+
+.nav-item {
+    background-color: #08D5A3;
+    font-family: 'Chakra Petch', sans-serif;
+    text-decoration: none;
+    font-size: 1.5rem;
+    box-sizing: content-box;
+    padding: 0;
+    margin: 2px 2px;
+    border-radius: 0.5rem;
+}
+
+.d-flex {
+    margin: auto;
+    padding: auto;
+}
+
+/* Estilo imágenes */
+.producto {
+    background-size: contain;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+img[alt=banner] {
+    width: 1200px;
+    margin: auto;
+    box-sizing: 100vh;
+    display: flex;
+    border-radius: 1em;
+    object-fit: scale-down;
+    background-size: contain
+}
+
+img[alt=banner-query] {
+    display: none;
+    width: 400px;
+    align-self: center;
+    margin: auto;
+    box-sizing: 100vh;
+    border-radius: 1em;
+    object-fit: scale-down;
+    background-size: contain;
+}
+
+/* Query banner */
+
+@media screen and (max-width: 1000px) {
+    img[alt=banner-query] {
+        display: flex;
+        align-self: center;
+        margin: auto;
+        box-sizing: 100vh;
+        border-radius: 1em;
+        object-fit: scale-down;
+        background-size: contain;
+    }
+
+    .bannerImg {
+        display: none;
+    }
+}
+
+img[alt=billetera] {
+    position: relative;
+    width: 287px;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 10%;
+    object-fit: cover;
+
+}
+
+img[alt=botella] {
+    position: relative;
+    width: 287px;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 10%;
+}
+
+img[alt=buzo] {
+    position: relative;
+    width: 255px;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 10%;
+}
+
+img[alt=taza] {
+    position: relative;
+    width: 210px;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 10%;
+}
+
+img[alt=mousepad] {
+    position: relative;
+    width: 720px;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 10%;
+}
+
+img[alt=mousepadMini] {
+    position: relative;
+    width: 300px;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 10%;
+}
+
+img[alt=remera] {
+    position: relative;
+    width: 490px;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 10%;
+}
+
+img[alt=vaso] {
+    position: relative;
+    width: 360px;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 10%;
+}
+
+/* Query imágenes */
+
+@media screen and (max-width: 450px) {
+
+    img[alt=billetera] {
+        position: relative;
+        width: 390px;
+        margin: 10px;
+        border-style: solid;
+        border-radius: 10%;
+        object-fit: cover;
+
+    }
+
+    img[alt=botella] {
+        position: relative;
+        width: 390px;
+        margin: 10px;
+        border-style: solid;
+        border-radius: 10%;
+    }
+
+    img[alt=buzo] {
+        position: relative;
+        width: 390px;
+        margin: 10px;
+        border-style: solid;
+        border-radius: 10%;
+    }
+
+    img[alt=taza] {
+        position: relative;
+        width: 390px;
+        margin: 10px;
+        border-style: solid;
+        border-radius: 10%;
+    }
+
+    img[alt=mousepad] {
+        width: 390px;
+        position: relative;
+        margin: 10px;
+        border-style: solid;
+        border-radius: 10%;
+        background-size: contain
+    }
+
+    img[alt=mousepadMini] {
+        position: relative;
+        width: 390px;
+        margin: 10px;
+        border-style: solid;
+        border-radius: 10%;
+    }
+
+    img[alt=remera] {
+        position: relative;
+        width: 390px;
+        margin: 10px;
+        border-style: solid;
+        border-radius: 10%;
+    }
+
+    img[alt=vaso] {
+        width: 390px;
+        margin: 10px;
+        border-style: solid;
+        border-radius: 10%;
+    }
+}
+
+/* Personalización del texto-Index */
+
+.col h1 {
+    border: solid;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: variables.$color4;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.col p {
+    font-size: 1.4rem;
+    padding-left: 10px;
+    background-color: variables.$color1;
+    display: flex;
+    align-content: center;
+}

@@ -1,0 +1,150 @@
+@use 'variables';
+@use 'mixin';
+
+/* Estilo contacto */
+
+/* Estilo formulario de contacto */
+
+.seccion-contacto {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card-body {
+        background: rgb(34, 193, 195);
+        background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(206, 253, 45, 1) 100%);
+        max-width: 100%;
+        max-height: 100%;
+        @include mixin.Bordes;
+        margin: 10px 10px 10px 10px;
+        padding: 10px 10px 10px 10px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        border: solid;
+
+        h5 {
+            font-size: 3rem;
+            border-bottom: solid;
+
+        }
+
+        h6 {
+            font-size: 2rem;
+        }
+
+        .card-text {
+            font-size: 1.5rem
+        }
+    }
+}
+
+.section-formulario {
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(206, 253, 45, 1) 100%);
+    max-width: 100%;
+    max-height: 100%;
+    @include mixin.Bordes;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: solid;
+
+    .form-contacto {
+
+        .mb-3 {
+            .label-contacto {
+                border-bottom: solid;
+                margin: 10px;
+                display: block;
+                font-size: 1.5em;
+                font-family: 'Chakra Petch', sans-serif;
+                font-family: 'Permanent Marker', cursive;
+
+                .form-text {
+                    font-size: 1em;
+                }
+            }
+        }
+
+    }
+}
+
+
+/* Estilado de las imágenes QR */
+
+
+.section-Redes {
+    background-color: variables.$color1;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0px;
+
+    h2 {
+        align-content: flex-start;
+        align-self: flex-start;
+        font-size: 3rem;
+        border: inset;
+        border-color: black;
+        border-radius: 10px;
+        background-color: variables.$color3;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .div_redes {
+        display: flex;
+        align-self: center;
+
+        .card_contacto {
+            @extend .section-Redes;
+            max-width: 400px;
+            margin: 10px;
+            align-items: center;
+            justify-content: center;
+            @include mixin.Bordes;
+
+
+            .card-img-top-mail {
+                margin-bottom: 12px;
+            }
+
+            img {
+                border-radius: 10px;
+                border: solid;
+                @include mixin.Bordes;
+
+            }
+
+            .card-body {
+                font-size: 1rem;
+                color: black;
+                @include mixin.Bordes;
+
+                .card-img-top {}
+
+                p {
+                    margin-top: 12px;
+                    margin-bottom: 12px;
+                    @include mixin.Bordes;
+
+                    a {
+                        color: azure;
+                        font-size: 1.6rem;
+                        text-decoration: none;
+                        padding: 10px;
+                        @include mixin.Bordes;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@use 'variables';
+
+/* Maquetación footer */
+
+footer {
+    background-color: #000;
+    padding: 10px;
+}
+
+.card-body {
+    background-color: variables.$color1;
+    border-radius: 10px;
+}
+
+.card {
+    background-color: #000;
+}
+
+.boton-footer {
+    text-decoration: none;
+    color: aliceblue
+}

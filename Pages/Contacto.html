@@ -55,39 +55,73 @@
                 </div>
             </div>
         </nav>
-        <section class="section-trabajosPersonalizados">
+
+        <div class="bannerImg"><img src="../Imagenes/Banner.jpg" alt="banner"></div>
+        <div class="bannerImg-query"><img src="../Imagenes/Banner-query.jpg" alt="banner-query"></div>
+
+        <section class="seccion-contacto">
+
+                <div class="card-body">
+                    <h5 class="card-title">Eterna Diseño</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Somos una empresa enfocada la sublimación, producción, diseño y venta de productos Geek</h6>
+                    <p class="card-text">Eterna Diseño es una empresa enfocada al diseño y fabricación a pedido de todo tipo de productos Geek.
+                        Nuestros productos están fabricado con productos de calidad, trabajando con las mejores marcas del mercado, para lograr una calidad unica con nuestro sello distintivo!</p>
+                </div>
+
             <!-- formulario de contacto -->
-            <form action="#">
-                <h1>Trabajemos Juntos!!!</h1><br>
-                <p>Texto Trabajemos Juntos</p>
-                <label for="Ingresa tu nombre">Nombre y apellido:
-                    <input type="text" placeholder="Ingresa tu nombre" name="Ingresa tu nombre"><br>
-                </label>
-                <label for="celular">Celular:
-                    <input type="number" placeholder="Numero de celular" name="celular"><br>
-                </label>
-                <label for="email">Decime tu email:
-                    <input type="email" placeholder="ejemplo@gmail.com" name="email"><br>
-                </label>
-                <label for="Observaciones"> Observaciones:
-                    <textarea placeholder="Observaciones" name="Observaciones"></textarea></label><br>
-                </label>
-            </form>
-            <h2>Consulte Nuestras redes!</h2>
+            <section class="section-formulario">
+                <form class="form-contacto">
+                    <div class="mb-3">
+                        <label class="label-contacto" for="exampleInputEmail1" class="form-label">Nombre y Apellido</label>
+                        <input type="text" class="form-control" id="text" aria-describedby="Area de nombre y apellido">
+                    </div>
+                    <div class="mb-3">
+                        <label class="label-contacto" for="exampleInputEmail1" class="form-label">Celular</label>
+                        <input type="text" class="form-control" id="text" aria-describedby="Area celular">
+                    </div>
+                    <div class="mb-3">
+                        <label class="label-contacto" for="exampleInputEmail1" class="form-label">Inserte su email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">También puedes escribirnos a Consultas@eternadiseño.com.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="label-contacto" for="exampleFormControlTextarea1" class="form-label">Inserte aquí su consulta!</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </section>
+        </section>
+        <!-- Redes -->
+        <section class="section-Redes">
+            <h2 class="h2_sectionRedes">Consulte Nuestras redes!</h2>
             <!-- Instagram -->
-            <div class="Instagram">
-                <a href="https://www.instagram.com/">Vea nuestro instagram!</a>
-                <img src="../Imagenes/QR Redes/qrcode_www.instagram.com.png" alt="instagramLink">
-            </div>
-            <!-- WhatsApp -->
-            <div>
-                <a href="https://web.whatsapp.com/">Consúltenos al WhatsApp</a>
-                <img src="../Imagenes/QR Redes/qrcode_web.whatsapp.com.png" alt="WhatsApp">
-            </div>
-            <!-- EMail -->
-            <div>
-                <a href="https://mail.google.com/">También puedes escribirnos a nuestro mail</a>
-                <img src="../Imagenes/QR Redes/qrcode_mail.google.com.png" alt="Mail">
+            <div class="div_redes">
+                <div class="card_contacto">
+                    <img src="../Imagenes/QR Redes/qrcode_www.instagram.com.png" class="card-img-top"
+                        alt="QR Instagram">
+                    <div class="card-body">
+                        <p class="card-text btn btn-secondary"><a href="https://www.instagram.com/">Vea nuestros
+                                Productos en instagram</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- WhatsApp -->
+                <div class="card_contacto">
+                    <img src="../Imagenes/QR Redes/qrcode_web.whatsapp.com.png" class="card-img-top" alt="QR WhatsApp">
+                    <div class="card-body">
+                        <p class="card-text btn btn-secondary"><a href="https://web.whatsapp.com/">Contáctenos al
+                                WhatsApp</a></p>
+                    </div>
+                </div>
+                <!-- EMail -->
+                <div class="card_contacto">
+                    <img src="../Imagenes/QR Redes/qrcode_mail.google.com.png" class="card-img-top-mail" alt="QR Mail">
+                    <div class="card-body btn btn-secondary">
+                        <p class="card-text mail"><a href="https://www.instagram.com/">Puede enviarnos un mail!</a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
     </header>
