@@ -2,6 +2,11 @@
 /* variables */
 /* Estilo contacto */
 /* Estilo formulario de contacto */
+.body-contacto {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(206, 253, 45) 100%);
+}
+
 .seccion-contacto {
   display: flex;
   justify-content: center;
@@ -10,8 +15,6 @@
 .seccion-contacto .card-body {
   background: rgb(34, 193, 195);
   background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(206, 253, 45) 100%);
-  max-width: 100%;
-  max-height: 100%;
   width: 100%;
   height: 100%;
   margin: 10px 10px 10px 10px;
@@ -36,8 +39,6 @@
 .section-formulario {
   background: rgb(34, 193, 195);
   background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(206, 253, 45) 100%);
-  max-width: 100%;
-  max-height: 100%;
   width: 100%;
   height: 100%;
   margin: 10px 10px 10px 10px;
@@ -64,8 +65,6 @@
   background-color: #1E8449;
   display: flex;
   flex-direction: column;
-  max-width: 100%;
-  max-height: 100%;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 0px;
@@ -123,6 +122,34 @@
   height: 100%;
 }
 
+@media screen and (max-width: 600px) {
+  .seccion-contacto {
+    flex-direction: column;
+  }
+  .seccion-contacto .card-body {
+    max-width: 400px;
+    max-height: 100%;
+  }
+  .section-formulario {
+    max-width: 400px;
+    max-height: 100%;
+  }
+  /* Estilado de las imágenes QR */
+  .section-Redes, .section-Redes .div_redes .card_contacto {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .section-Redes .h2_sectionRedes, .section-Redes .div_redes .card_contacto .h2_sectionRedes {
+    max-width: 400px;
+    max-height: 100%;
+  }
+  .section-Redes .div_redes, .section-Redes .div_redes .card_contacto .div_redes {
+    flex-direction: column;
+  }
+  .section-Redes .div_redes .card_contacto {
+    margin: auto;
+  }
+}
 /* Maquetación footer */
 footer {
   background-color: #000;
@@ -157,11 +184,6 @@ footer {
   margin-bottom: 0px;
   width: 100%;
   height: 100%;
-}
-
-nav {
-  margin: 0px;
-  padding: 0px;
 }
 
 .container-fluid {
