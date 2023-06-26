@@ -1,51 +1,33 @@
 @use 'variables';
 @use 'mixin';
 
-/* Productos flex */
+// Estilos productos
 
-.section-quienesSomos {
+
+
+.seccion-imagenes{
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    @include mixin.Bordes;
-    background-color: variables.$color4;
-}
+    padding: 10px;
+    margin: 10px;
 
-.section-quienesSomos p {
-    background-color: variables.$color4;
-    align-items: center;
-    align-content: center;
-    flex: grow 1;
-    font-size: 2rem;
-    flex-basis: 10px;
-    font-family: 'Chakra Petch', sans-serif;
-    font-family: 'Permanent Marker', cursive;
+    .card{
+        padding: 10px;
+    margin: 10px;
 
-}
+        .img{
 
-.section-quienesSomos .video {
-    align-items: center;
-    align-content: center;
-    background-color: variables.$color4;
-    align-self: center;
-    width: 100rem;
-    border-radius: 20px;
-    margin-bottom: 10px;
-}
+        }
+        .card-body{
+            .card-title{
 
-@media screen and (min-width: 400px) {
-    .section-quienesSomos video {
-        max-width: 400px;
-        order: 1;
-        margin-top: 0px;
+            }
+
+            .card-text{
+
+            }
+            .a{
+
+            }
+        }
+        }
     }
-
-    .section-quienesSomos p {
-        font-size: 27.72px;
-        order: 2;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-}

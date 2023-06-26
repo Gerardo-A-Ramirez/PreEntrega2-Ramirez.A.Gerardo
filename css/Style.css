@@ -550,5 +550,14 @@ img[alt=imagen-carousel] {
     margin-bottom: 0px;
   }
 }
+.seccion-imagenes {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+}
+.seccion-imagenes .card {
+  padding: 10px;
+  margin: 10px;
+}
 
 /*# sourceMappingURL=Style.css.map */
