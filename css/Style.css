@@ -173,10 +173,8 @@ footer {
 /* Maquetación Index */
 .body-index {
   background-color: #1E736C;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-  width: 100%;
-  height: 100%;
+  padding: 0px;
+  margin: 0px;
 }
 
 .section-trabajosPersonalizados {
@@ -195,8 +193,6 @@ footer {
 .navbar-brand {
   font-family: "Chakra Petch", sans-serif;
   box-sizing: content-box;
-  padding: 0px;
-  margin: 0px;
   margin-top: 0px;
   border-radius: 0.5rem;
   background-color: #58C0B6;
@@ -234,7 +230,6 @@ footer {
 
 /* Estilo imágenes */
 .producto {
-  background-size: contain;
   max-width: 100%;
   max-height: 100%;
 }
@@ -310,7 +305,7 @@ img[alt=taza] {
 
 img[alt=mousepad] {
   position: relative;
-  width: 720px;
+  width: 700px;
   margin: 10px;
   border-style: solid;
   border-radius: 10%;
@@ -504,60 +499,78 @@ img[alt=imagen-carousel] {
   background-color: #1E8449;
 }
 
-/* Productos flex */
+.seccion-imagenes {
+  display: flex;
+  padding: 0px;
+  margin: 10px;
+  flex-direction: row;
+}
+.seccion-imagenes .card {
+  padding: 10px;
+  margin: 10px;
+}
+.seccion-imagenes .card .img {
+  width: 1000px;
+  min-width: 320px;
+}
+@media screen and (min-width: 400px) {
+  .seccion-imagenes {
+    flex-direction: column;
+  }
+}
+/* quienes somos */
+.bodyQuienesSomos {
+  padding: 0px;
+  margin: 0px;
+}
+
 .section-quienesSomos {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
-  background-color: #08D5A3;
+  align-content: center;
+  background-color: #1E736C;
 }
-
 .section-quienesSomos p {
   background-color: #08D5A3;
   align-items: center;
   align-content: center;
-  flex: grow 1;
   font-size: 2rem;
   flex-basis: 10px;
   font-family: "Chakra Petch", sans-serif;
   font-family: "Permanent Marker", cursive;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
 }
-
 .section-quienesSomos .video {
   align-items: center;
   align-content: center;
   background-color: #08D5A3;
   align-self: center;
-  width: 100rem;
   border-radius: 20px;
   margin-bottom: 10px;
+  max-width: 450px;
+  width: 100%;
+  height: 100%;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 320px) {
   .section-quienesSomos video {
-    max-width: 400px;
-    order: 1;
+    min-width: 330px;
     margin-top: 0px;
   }
   .section-quienesSomos p {
     font-size: 27.72px;
-    order: 2;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 0px;
     margin-bottom: 0px;
   }
-}
-.seccion-imagenes {
-  display: flex;
-  padding: 0px;
-  margin: 10px;
-}
-.seccion-imagenes .card {
-  padding: 10px;
-  margin: 10px;
 }
 
 /*# sourceMappingURL=Style.css.map */

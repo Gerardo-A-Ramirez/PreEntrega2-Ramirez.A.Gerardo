@@ -9,13 +9,15 @@
     display: flex;
     padding: 0px;
     margin: 10px;
+    flex-direction: row;
 
     .card{
         padding: 10px;
     margin: 10px;
 
         .img{
-
+            width: 1000px;
+        min-width: 320px
         }
         .card-body{
             .card-title{
@@ -29,5 +31,11 @@
 
             }
         }
+        }
+    }
+
+    @media screen and (min-width: 400px){
+        .seccion-imagenes{
+flex-direction: column;
         }
     }
