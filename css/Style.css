@@ -552,7 +552,7 @@ img[alt=imagen-carousel] {
 }
 .seccion-imagenes {
   display: flex;
-  padding: 10px;
+  padding: 0px;
   margin: 10px;
 }
 .seccion-imagenes .card {
