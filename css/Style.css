@@ -499,28 +499,87 @@ img[alt=imagen-carousel] {
   background-color: #1E8449;
 }
 
+.p_carrusel--titulo {
+  font-size: 2.5rem;
+  margin-left: 10px;
+  width: 90%;
+}
+
+#Seccion-productos .titulo-productos {
+  font-size: 2rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-right: solid;
+  border-bottom: solid;
+  width: 400px;
+}
 #Seccion-productos .seccion-imagenes {
   display: flex;
   padding: 0px;
-  margin: 10px;
   flex-direction: row;
   width: 100%;
   height: 100%;
 }
 #Seccion-productos .seccion-imagenes .card {
   display: flex;
+  width: 450px;
   border: solid;
   border-radius: 10px;
   margin: auto;
 }
 #Seccion-productos .seccion-imagenes .card .img-container {
-  width: 100%;
   height: 480px;
   max-width: 100%;
   display: flex;
 }
 #Seccion-productos .seccion-imagenes .card .img-container .img[alt="Cuadro de madera Mandalorian"] {
-  object-fit: contain;
+  object-fit: cover;
+  width: 100%;
+}
+#Seccion-productos .seccion-imagenes .card .img-container .img[alt="Cuadro Dragon de Game Of Throne"] {
+  object-fit: cover;
+  width: 100%;
+}
+#Seccion-productos .seccion-imagenes .card .img-container .img[alt="Mural de League Of Legend"] {
+  object-fit: cover;
+  width: 100%;
+}
+#Seccion-productos .seccion-imagenes .card .img-container .img[alt="Termo Batman"] {
+  object-fit: cover;
+  width: 100%;
+}
+#Seccion-productos .seccion-imagenes .card .img-container .img[alt="Termo de los Simpsons"] {
+  object-fit: cover;
+  width: 100%;
+}
+#Seccion-productos .seccion-imagenes .card .img-container .img[alt="Vaso Térmico Game Of Throne"] {
+  object-fit: cover;
+  width: 100%;
+}
+#Seccion-productos .seccion-imagenes .card .img-container .img[alt="Taza Marvel"] {
+  object-fit: cover;
+  width: 100%;
+}
+#Seccion-productos .seccion-imagenes .card .img-container .img[alt="Taza This is Fine!"] {
+  object-fit: cover;
+  width: 100%;
+}
+#Seccion-productos .seccion-imagenes .card .img-container .img[alt="Taza Rick and Morty"] {
+  object-fit: cover;
+  width: 100%;
+}
+#Seccion-productos .seccion-imagenes .card .img-container .img[alt="Mousepad de Dragon Ball"] {
+  object-fit: cover;
+  width: 100%;
+  height: 90%;
+}
+#Seccion-productos .seccion-imagenes .card .img-container .img[alt="Remera Marvel"] {
+  object-fit: cover;
+  width: 100%;
+}
+#Seccion-productos .seccion-imagenes .card .img-container .img[alt="Buzo half-life Lambda"] {
+  object-fit: cover;
+  width: 100%;
 }
 #Seccion-productos .seccion-imagenes .card .card-body {
   display: flex;

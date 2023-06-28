@@ -3,41 +3,93 @@
 
 // Estilos productos
 
+.p_carrusel--titulo{
+    font-size: 2.5rem;
+    margin-left: 10px;
+    width: calc(100%)-10;
+}
 
 #Seccion-productos {
 
-    .titulo-productos {}
+    .titulo-productos {
+font-size: 2rem;
+margin-left: 10px;
+margin-right: 10px;
+border-right: solid;
+border-bottom: solid;
+width: 400px;
+    }
 
     .seccion-imagenes {
         display: flex;
         padding: 0px;
-        margin: 10px;
         flex-direction: row;
         @include mixin.Bordes;
 
         .card {
             display: flex;
-
+            width: 450px;
             border: solid;
             border-radius: 10px;
             margin: auto;
 
             .img-container {
-                width: 100%;
                 height: 480px;
                 max-width: 100%;
                 display: flex;
 
                 .img[alt="Cuadro de madera Mandalorian"] {
 
-                    object-fit: contain;
+                    @include mixin.ImagenProducto;
 
                 }
 
+                .img[alt="Cuadro Dragon de Game Of Throne"] {
+                    @include mixin.ImagenProducto;
+
+                }
                 .img[alt="Mural de League Of Legend"] {
+                    @include mixin.ImagenProducto;
+
+                }
+                .img[alt="Termo Batman"] {
+                    @include mixin.ImagenProducto;
+
+                }
+                .img[alt="Termo de los Simpsons"] {
+                    @include mixin.ImagenProducto;
+
+                }
+                .img[alt="Vaso Térmico Game Of Throne"] {
+                    @include mixin.ImagenProducto;
+
+                }
+                .img[alt="Taza Marvel"] {
+                    @include mixin.ImagenProducto;
+
+                }
+                .img[alt="Taza This is Fine!"] {
+                    @include mixin.ImagenProducto;
+
+                }
+                .img[alt="Taza Rick and Morty"] {
+                    @include mixin.ImagenProducto;
+
+                }
+                .img[alt="Mousepad de Dragon Ball"] {
+                    @include mixin.ImagenProducto;
+                    height: calc(100%)-10;
+
+                }
+                .img[alt="Remera Marvel"] {
+                    @include mixin.ImagenProducto;
 
                 }
 
+                .img[alt="Buzo half-life Lambda"] {
+                    @include mixin.ImagenProducto;
+
+                }
 
             }
 
