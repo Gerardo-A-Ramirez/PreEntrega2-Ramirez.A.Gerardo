@@ -25,7 +25,7 @@ width: 400px;
         padding: 0px;
         flex-direction: row;
         @include mixin.Bordes;
-
+        
         .card {
             display: flex;
             width: 450px;
@@ -37,6 +37,7 @@ width: 400px;
                 height: 480px;
                 max-width: 100%;
                 display: flex;
+                
 
                 .img[alt="Cuadro de madera Mandalorian"] {
 
@@ -107,6 +108,15 @@ width: 400px;
 
         }
     }
-
+    @media screen and (max-width: 600px) {
+        .seccion-imagenes{
+            flex-direction: column;
+            
+            .card{
+                margin-top: 10px;
+            }
+        }
+    }
 
 }
+

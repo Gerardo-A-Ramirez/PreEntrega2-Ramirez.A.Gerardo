@@ -588,6 +588,14 @@ img[alt=imagen-carousel] {
 #Seccion-productos .seccion-imagenes .card .card-body .card-title {
   margin: auto;
 }
+@media screen and (max-width: 600px) {
+  #Seccion-productos .seccion-imagenes {
+    flex-direction: column;
+  }
+  #Seccion-productos .seccion-imagenes .card {
+    margin-top: 10px;
+  }
+}
 
 /* quienes somos */
 .bodyQuienesSomos {
