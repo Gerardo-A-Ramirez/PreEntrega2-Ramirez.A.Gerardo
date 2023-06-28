@@ -499,25 +499,37 @@ img[alt=imagen-carousel] {
   background-color: #1E8449;
 }
 
-.seccion-imagenes {
+#Seccion-productos .seccion-imagenes {
   display: flex;
   padding: 0px;
   margin: 10px;
   flex-direction: row;
+  width: 100%;
+  height: 100%;
 }
-.seccion-imagenes .card {
-  padding: 10px;
-  margin: 10px;
+#Seccion-productos .seccion-imagenes .card {
+  display: flex;
+  border: solid;
+  border-radius: 10px;
+  margin: auto;
 }
-.seccion-imagenes .card .img {
-  width: 1000px;
-  min-width: 320px;
+#Seccion-productos .seccion-imagenes .card .img-container {
+  width: 100%;
+  height: 480px;
+  max-width: 100%;
+  display: flex;
 }
-@media screen and (min-width: 400px) {
-  .seccion-imagenes {
-    flex-direction: column;
-  }
+#Seccion-productos .seccion-imagenes .card .img-container .img[alt="Cuadro de madera Mandalorian"] {
+  object-fit: contain;
 }
+#Seccion-productos .seccion-imagenes .card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+#Seccion-productos .seccion-imagenes .card .card-body .card-title {
+  margin: auto;
+}
+
 /* quienes somos */
 .bodyQuienesSomos {
   padding: 0px;

@@ -4,38 +4,57 @@
 // Estilos productos
 
 
+#Seccion-productos {
 
-.seccion-imagenes{
-    display: flex;
-    padding: 0px;
-    margin: 10px;
-    flex-direction: row;
+    .titulo-productos {}
 
-    .card{
-        padding: 10px;
-    margin: 10px;
+    .seccion-imagenes {
+        display: flex;
+        padding: 0px;
+        margin: 10px;
+        flex-direction: row;
+        @include mixin.Bordes;
 
-        .img{
-            width: 1000px;
-        min-width: 320px
-        }
-        .card-body{
-            .card-title{
+        .card {
+            display: flex;
+
+            border: solid;
+            border-radius: 10px;
+            margin: auto;
+
+            .img-container {
+                width: 100%;
+                height: 480px;
+                max-width: 100%;
+                display: flex;
+
+                .img[alt="Cuadro de madera Mandalorian"] {
+
+                    object-fit: contain;
+
+                }
+
+                .img[alt="Mural de League Of Legend"] {
+
+                }
+
 
             }
 
-            .card-text{
+            .card-body {
+
+                display: flex;
+                flex-direction: column;
+
+
+                .card-title {
+                    margin: auto;
+                }
 
             }
-            .a{
 
-            }
-        }
         }
     }
 
-    @media screen and (min-width: 400px){
-        .seccion-imagenes{
-flex-direction: column;
-        }
-    }
+
+}
