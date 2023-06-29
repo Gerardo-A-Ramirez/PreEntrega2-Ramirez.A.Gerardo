@@ -4,6 +4,6 @@
 }
 
 @mixin ImagenProducto{
-    object-fit:cover;
+    object-fit:contain;
     width: 100%;
 }

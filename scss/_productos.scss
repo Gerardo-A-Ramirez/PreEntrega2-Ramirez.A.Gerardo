@@ -27,6 +27,8 @@
         padding: 0px;
         flex-direction: row;
         @include mixin.Bordes;
+        width: 10000px;
+        max-width: 100%;
        
         
         .card {
@@ -83,7 +85,7 @@
                 }
                 .img[alt="Mousepad de Dragon Ball"] {
                     @include mixin.ImagenProducto;
-                    height: calc(100%)-10;
+                    
 
                 }
                 .img[alt="Remera Marvel"] {
@@ -129,7 +131,7 @@
 
         }
     }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 1000px) {
         .seccion-imagenes{
             flex-direction: column;
             max-width: calc(100%)-2;
