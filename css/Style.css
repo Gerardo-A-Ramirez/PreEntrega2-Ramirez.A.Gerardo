@@ -506,12 +506,14 @@ img[alt=imagen-carousel] {
 }
 
 #Seccion-productos .titulo-productos {
-  font-size: 2rem;
+  font-size: 2em;
+  align-self: flex-start;
   margin-left: 10px;
   margin-right: 10px;
   border-right: solid;
   border-bottom: solid;
-  width: 400px;
+  width: 100%;
+  max-width: 90%;
 }
 #Seccion-productos .seccion-imagenes {
   display: flex;
@@ -526,6 +528,7 @@ img[alt=imagen-carousel] {
   border: solid;
   border-radius: 10px;
   margin: auto;
+  max-width: 100%;
 }
 #Seccion-productos .seccion-imagenes .card .img-container {
   height: 480px;
@@ -584,13 +587,36 @@ img[alt=imagen-carousel] {
 #Seccion-productos .seccion-imagenes .card .card-body {
   display: flex;
   flex-direction: column;
+  background-color: #000;
 }
 #Seccion-productos .seccion-imagenes .card .card-body .card-title {
-  margin: auto;
+  font-size: 28px;
+  color: aliceblue;
+  border-bottom: solid;
+  border-left: solid;
+  padding-left: 6px;
+  margin-bottom: 4px;
+}
+#Seccion-productos .seccion-imagenes .card .card-body .card-text {
+  font-size: 22px;
+  color: aliceblue;
+}
+#Seccion-productos .seccion-imagenes .card .card-body .Tamaño {
+  border: solid;
+  border-color: aliceblue;
+  font-size: 25px;
+  color: aliceblue;
+  padding: 3px;
+  justify-self: start;
+  width: 100%;
 }
 @media screen and (max-width: 600px) {
   #Seccion-productos .seccion-imagenes {
     flex-direction: column;
+    max-width: 98%;
+    margin: auto;
+    max-height: 100%;
+    height: 100%;
   }
   #Seccion-productos .seccion-imagenes .card {
     margin-top: 10px;
@@ -650,6 +676,45 @@ img[alt=imagen-carousel] {
     margin-top: 0px;
     margin-bottom: 0px;
   }
+}
+.precio {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding: 6px;
+  --border-size: 3px;
+  --border-angle: 0turn;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  background-image: conic-gradient(from var(--border-angle), #213, #112 50%, #213), conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+  background-size: calc(100% - var(--border-size) * 2) calc(100% - var(--border-size) * 2), cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-animation: bg-spin 3s linear infinite;
+  animation: bg-spin 3s linear infinite;
+}
+
+@-webkit-keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+.precio:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
 }
 
 /*# sourceMappingURL=Style.css.map */
