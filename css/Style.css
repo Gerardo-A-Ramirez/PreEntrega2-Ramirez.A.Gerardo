@@ -653,22 +653,33 @@ img[alt=imagen-carousel] {
   width: 100%;
   height: 100%;
 }
-.section-quienesSomos .video {
-  align-items: center;
-  align-content: center;
+.section-quienesSomos .videos-instagram {
+  border-top: solid;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100% !important;
+  margin: 7px;
+  padding: 7px;
+  max-width: 100% !important;
+}
+.section-quienesSomos .videos-instagram .instagram-media {
   background-color: #08D5A3;
-  align-self: center;
-  border-radius: 20px;
-  margin-bottom: 10px;
-  max-width: 450px;
+  border-radius: 10px !important;
   width: 100%;
-  height: 100%;
+  max-width: 525px;
 }
 
-@media screen and (min-width: 320px) {
-  .section-quienesSomos video {
-    min-width: 330px;
-    margin-top: 0px;
+@media screen and (max-width: 1010px) {
+  .section-quienesSomos .videos-instagram {
+    flex-direction: column;
+    margin: auto;
+  }
+  .section-quienesSomos .videos-instagram .instagram-media {
+    align-self: center;
+    width: 100%;
+    max-width: 100%;
   }
   .section-quienesSomos p {
     font-size: 27.72px;

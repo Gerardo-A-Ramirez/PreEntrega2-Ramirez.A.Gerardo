@@ -1,9 +1,9 @@
-@mixin Bordes{
+@mixin Bordes {
     width: 100%;
     height: 100%;
 }
 
-@mixin ImagenProducto{
-    object-fit:contain;
+@mixin ImagenProducto {
+    object-fit: contain;
     width: 100%;
 }
