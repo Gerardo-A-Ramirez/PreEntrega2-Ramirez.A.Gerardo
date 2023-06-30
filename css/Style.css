@@ -191,11 +191,16 @@ footer {
 }
 
 .navbar-brand {
+  display: flex;
   font-family: "Chakra Petch", sans-serif;
-  box-sizing: content-box;
-  margin-top: 0px;
   border-radius: 0.5rem;
   background-color: #58C0B6;
+  width: 100%;
+  max-width: 200px;
+  justify-content: center;
+}
+.navbar-brand .menu-index {
+  font-size: 1.7rem;
 }
 
 .nav-link {

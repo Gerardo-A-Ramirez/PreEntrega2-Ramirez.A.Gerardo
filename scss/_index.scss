@@ -24,12 +24,17 @@
 .navbar-brand {
     display: flex;
     font-family: 'Chakra Petch', sans-serif;
-    margin-top: px;
     border-radius: 0.5rem;
     background-color: variables.$color3;
     width: 100%;
-    max-width: 9%;
+    max-width: 200px;
     justify-content: center;
+
+    .menu-index {
+        font-size: 1.7rem;
+        ;
+
+    }
 }
 
 .nav-link {
