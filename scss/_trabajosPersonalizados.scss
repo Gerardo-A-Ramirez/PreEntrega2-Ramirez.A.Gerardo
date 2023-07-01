@@ -4,6 +4,10 @@
 /* Personalización de Trabajos personalizados */
 /* Carousel de imagenes */
 
+.body_trabajos{
+    height: 100%;
+    max-height: 100%;
+}
 
 .section-trabajosPersonalizados {
     background-color: variables.$color2;
@@ -11,86 +15,103 @@
 
 .section-carusel {
     display: flex;
-    background-color: variables.$color2;
     padding: 0rem;
     margin: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    @include mixin.background;
+    height: 100%;
+    max-height: 100%;
+    min-height: 805px;
+    align-items: center;
+    justify-content: center;
+    #carouselExampleFade{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        max-width: 100%;
+        align-items: flex-start;
+        justify-content: center;
+        .Texto-Trabajos {
+            font-size: 24px;
+            border: solid;
+            border-radius: 10px;
+            background-color: variables.$color4;
+            text-decoration: none;
+            padding-left: 5px;
+            width: calc(100%)-10;
+            max-width: 100%;
+           margin: auto;
+        
+            a {
+                text-decoration: none;
+            }
+        
+            &:hover {
+                background-color: variables.$color1;
+            }
+        }
+        .carousel-inner {
+            width: 100%;
+            max-width: 700px;
+            margin: auto;
+            .carousel-item {
+                display: flex;
+                max-width: 100%;
+                height: 780px;
+                width: 100%;
+                flex-direction: column;
+                .label-personalizados {
+                    font-size: 1.5rem;
+                    border: groove;
+                    border-radius: 10px;
+                    background-color: variables.$color3;
+                    margin: 5px;
+                    padding: 10px;
+                    
+                }
+                img[alt=imagen-carousel] {
+                    width: 100%;
+                    height: 100%;
+                    margin: 0px;
+                    border: solid;
+                   
+                }
+        }
+        .botonesDireccionales{
+            align-items: center;
+            justify-content: center;
+        }}
+    }
 }
 
-.carousel-inner {
-    max-width: 400px;
-    align-content: center;
-    margin: auto;
-    margin-top: 0Px;
-}
-
-.carousel {
-    width: 600px;
-    margin: auto;
-    padding-bottom: 0px;
-}
-
-.carousel-item {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-}
 
 
-img[alt=imagen-carousel] {
-    width: 100px;
-    margin: 0px;
-    border: solid;
-}
 
-.label-personalizados {
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-    border: groove;
-    background-color: variables.$color3;
-}
 
-.imagen-carousel .img2 {
-    width: 10px;
-}
+
+
+
+
+
+
 
 /* Query Carrousel */
 
-@media screen and (max-width: 600px) {
-    .section-carusel {
-        max-width: 410px;
-        margin: auto;
-        align-items: center;
-        align-content: center;
-    }
+// @media screen and (max-width: 600px) {
+//     .section-carusel {
+//         max-width: 100%;
+//         margin: auto;
+//         #carouselExampleFade{
+//             .Texto-Trabajos{
+//                 max-width: calc(100%)-2;
+//                 margin: auto;
+//             }
 
-    #carouselExampleFade div {
-        width: 400px;
-        align-items: center;
-        align-items: center;
-    }
+//         }
 
-    .footer {
-        align-items: flex-end;
-        align-content: flex-end;
-    }
-}
+//     }
 
-.Texto-Trabajos {
-    font-size: 24px;
-    border: solid;
-    border-radius: 10px;
-    background-color: variables.$color4;
-    text-decoration: none;
-    padding-left: 5px;
-}
+//     #carouselExampleFade div {
+//         width: 400px;
+//     }
 
-.Texto-Trabajos a {
-    text-decoration: none;
-}
-
-.Texto-Trabajos:hover {
-    background-color: variables.$color1;
-
-}
+// }

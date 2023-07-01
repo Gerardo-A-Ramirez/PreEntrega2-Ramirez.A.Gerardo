@@ -6,8 +6,7 @@
 /* Estilo formulario de contacto */
 
 .body-contacto {
-    background: rgb(34, 193, 195);
-    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(206, 253, 45, 1) 100%);
+    @include mixin.background;
 }
 
 .seccion-contacto {
@@ -15,10 +14,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include mixin.background;
 
     .card-body {
-        background: rgb(34, 193, 195);
-        background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(206, 253, 45, 1) 100%);
+        @include mixin.background;
         @include mixin.Bordes;
         margin: 10px 10px 10px 10px;
         padding: 10px 10px 10px 10px;
@@ -45,8 +44,7 @@
 }
 
 .section-formulario {
-    background: rgb(34, 193, 195);
-    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(206, 253, 45, 1) 100%);
+    @include mixin.background;
     @include mixin.Bordes;
     margin: 10px 10px 10px 10px;
     padding: 10px 10px 10px 10px;
@@ -134,7 +132,7 @@
                     @include mixin.Bordes;
 
                     a {
-                        color: azure;
+                        color:white;
                         font-size: 1.6rem;
                         text-decoration: none;
                         padding: 10px;
@@ -146,7 +144,7 @@
     }
 }
 
-// MediaQuerys
+// MediaQuery
 
 @media screen and (max-width: 600px) {
 
@@ -162,17 +160,6 @@
     .section-formulario {
         max-width: 400px;
         max-height: 100%;
-
-        .form-contacto {
-
-            .mb-3 {
-                .label-contacto {
-
-                    .form-text {}
-                }
-            }
-
-        }
     }
 
 

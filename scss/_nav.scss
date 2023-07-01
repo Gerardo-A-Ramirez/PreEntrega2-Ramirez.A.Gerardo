@@ -1,0 +1,57 @@
+@use 'variables';
+@use 'mixin';
+
+.container-fluid {
+    background-color: variables.$color2;
+    margin: 0px;
+    padding: 0px;
+    .navbar-brand {
+        display: flex;
+        font-family: 'Chakra Petch', sans-serif;
+        border-radius: 0.5rem;
+        background-color: variables.$color3;
+        width: 100%;
+        max-width: 200px;
+        justify-content: center;
+    
+        .menu-index {
+            font-size: 1.7rem;
+    
+        }
+        .nav-item {
+            background-color: #08D5A3;
+            font-family: 'Chakra Petch', sans-serif;
+            text-decoration: none;
+            font-size: 1.5rem;
+            box-sizing: content-box;
+            padding: 0;
+            margin: 2px 2px;
+            border-radius: 0.5rem;
+            .nav-link {
+        font-size: 50px;
+            }
+            
+        }
+    }
+}
+
+
+
+
+
+.navbar-brand:hover {
+    font-weight: 400px;
+}
+
+.nav-link:hover {
+    background-color: variables.$color3;
+    font-weight: bold;
+    border-radius: 10Px;
+}
+
+
+
+.d-flex {
+    margin: auto;
+    padding: auto;
+}

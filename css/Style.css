@@ -11,6 +11,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(206, 253, 45) 100%);
 }
 .seccion-contacto .card-body {
   background: rgb(34, 193, 195);
@@ -114,7 +116,7 @@
   height: 100%;
 }
 .section-Redes .div_redes .card_contacto .card-body p a {
-  color: azure;
+  color: white;
   font-size: 1.6rem;
   text-decoration: none;
   padding: 10px;
@@ -175,62 +177,6 @@ footer {
   background-color: #1E736C;
   padding: 0px;
   margin: 0px;
-}
-
-.section-trabajosPersonalizados {
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-  width: 100%;
-  height: 100%;
-}
-
-.container-fluid {
-  background-color: #1E736C;
-  margin: 0px;
-  padding: 0px;
-}
-
-.navbar-brand {
-  display: flex;
-  font-family: "Chakra Petch", sans-serif;
-  border-radius: 0.5rem;
-  background-color: #58C0B6;
-  width: 100%;
-  max-width: 200px;
-  justify-content: center;
-}
-.navbar-brand .menu-index {
-  font-size: 1.7rem;
-}
-
-.nav-link {
-  font-size: 10px;
-}
-
-.navbar-brand:hover {
-  font-weight: 400px;
-}
-
-.nav-link:hover {
-  background-color: #58C0B6;
-  font-weight: bold;
-  border-radius: 10Px;
-}
-
-.nav-item {
-  background-color: #08D5A3;
-  font-family: "Chakra Petch", sans-serif;
-  text-decoration: none;
-  font-size: 1.5rem;
-  box-sizing: content-box;
-  padding: 0;
-  margin: 2px 2px;
-  border-radius: 0.5rem;
-}
-
-.d-flex {
-  margin: auto;
-  padding: auto;
 }
 
 /* Estilo imágenes */
@@ -420,90 +366,84 @@ img[alt=vaso] {
 
 /* Personalización de Trabajos personalizados */
 /* Carousel de imagenes */
+.body_trabajos {
+  height: 100%;
+  max-height: 100%;
+}
+
 .section-trabajosPersonalizados {
   background-color: #1E736C;
 }
 
 .section-carusel {
   display: flex;
-  background-color: #1E736C;
   padding: 0rem;
   margin: auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(206, 253, 45) 100%);
+  height: 100%;
+  max-height: 100%;
+  min-height: 805px;
+  align-items: center;
+  justify-content: center;
 }
-
-.carousel-inner {
-  max-width: 400px;
-  align-content: center;
-  margin: auto;
-  margin-top: 0Px;
-}
-
-.carousel {
-  width: 600px;
-  margin: auto;
-  padding-bottom: 0px;
-}
-
-.carousel-item {
-  margin-top: 10px;
-  margin-bottom: 10px;
+.section-carusel #carouselExampleFade {
   display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 100%;
+  align-items: flex-start;
+  justify-content: center;
 }
-
-img[alt=imagen-carousel] {
-  width: 100px;
-  margin: 0px;
-  border: solid;
-}
-
-.label-personalizados {
-  margin-bottom: 10px;
-  font-size: 1.5rem;
-  border: groove;
-  background-color: #58C0B6;
-}
-
-.imagen-carousel .img2 {
-  width: 10px;
-}
-
-/* Query Carrousel */
-@media screen and (max-width: 600px) {
-  .section-carusel {
-    max-width: 410px;
-    margin: auto;
-    align-items: center;
-    align-content: center;
-  }
-  #carouselExampleFade div {
-    width: 400px;
-    align-items: center;
-    align-items: center;
-  }
-  .footer {
-    align-items: flex-end;
-    align-content: flex-end;
-  }
-}
-.Texto-Trabajos {
+.section-carusel #carouselExampleFade .Texto-Trabajos {
   font-size: 24px;
   border: solid;
   border-radius: 10px;
   background-color: #08D5A3;
   text-decoration: none;
   padding-left: 5px;
+  width: 90%;
+  max-width: 100%;
+  margin: auto;
 }
-
-.Texto-Trabajos a {
+.section-carusel #carouselExampleFade .Texto-Trabajos a {
   text-decoration: none;
 }
-
-.Texto-Trabajos:hover {
+.section-carusel #carouselExampleFade .Texto-Trabajos:hover {
   background-color: #1E8449;
 }
+.section-carusel #carouselExampleFade .carousel-inner {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+}
+.section-carusel #carouselExampleFade .carousel-inner .carousel-item {
+  display: flex;
+  max-width: 100%;
+  height: 780px;
+  width: 100%;
+  flex-direction: column;
+}
+.section-carusel #carouselExampleFade .carousel-inner .carousel-item .label-personalizados {
+  font-size: 1.5rem;
+  border: groove;
+  border-radius: 10px;
+  background-color: #58C0B6;
+  margin: 5px;
+  padding: 10px;
+}
+.section-carusel #carouselExampleFade .carousel-inner .carousel-item img[alt=imagen-carousel] {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  border: solid;
+}
+.section-carusel #carouselExampleFade .carousel-inner .botonesDireccionales {
+  align-items: center;
+  justify-content: center;
+}
 
+/* Query Carrousel */
 .p_carrusel--titulo {
   font-size: 2.5rem;
   margin-left: 10px;
@@ -732,6 +672,51 @@ img[alt=imagen-carousel] {
   syntax: "<angle>";
   inherits: true;
   initial-value: 0turn;
+}
+.container-fluid {
+  background-color: #1E736C;
+  margin: 0px;
+  padding: 0px;
+}
+.container-fluid .navbar-brand {
+  display: flex;
+  font-family: "Chakra Petch", sans-serif;
+  border-radius: 0.5rem;
+  background-color: #58C0B6;
+  width: 100%;
+  max-width: 200px;
+  justify-content: center;
+}
+.container-fluid .navbar-brand .menu-index {
+  font-size: 1.7rem;
+}
+.container-fluid .navbar-brand .nav-item {
+  background-color: #08D5A3;
+  font-family: "Chakra Petch", sans-serif;
+  text-decoration: none;
+  font-size: 1.5rem;
+  box-sizing: content-box;
+  padding: 0;
+  margin: 2px 2px;
+  border-radius: 0.5rem;
+}
+.container-fluid .navbar-brand .nav-item .nav-link {
+  font-size: 50px;
+}
+
+.navbar-brand:hover {
+  font-weight: 400px;
+}
+
+.nav-link:hover {
+  background-color: #58C0B6;
+  font-weight: bold;
+  border-radius: 10Px;
+}
+
+.d-flex {
+  margin: auto;
+  padding: auto;
 }
 
 /*# sourceMappingURL=Style.css.map */
