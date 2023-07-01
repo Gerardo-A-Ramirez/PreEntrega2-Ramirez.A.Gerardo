@@ -673,10 +673,112 @@ img[alt=vaso] {
   inherits: true;
   initial-value: 0turn;
 }
+:root {
+  --timing-function: cubic-bezier(0.82, 0.2, 0.42, 1);
+}
+
+.navbar-nav {
+  list-style: none;
+}
+
+.nav-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  background-color: #000;
+  font: 22px sans-serif;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 70px;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  display: block;
+  padding: 10px;
+  overflow: hidden;
+  transition: color 0s 0.25s var(--timing-function);
+}
+
+.navbar-nav .nav-link::before,
+.navbar-nav .nav-link::after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #58C0B6;
+}
+
+.navbar-nav .nav-link::before {
+  content: "";
+  top: 50%;
+  transform: translate(-101%, -50%);
+  height: 50%;
+  z-index: 1;
+  background: #c56937;
+  transition: transform 0.5s var(--timing-function);
+}
+
+.navbar-nav .nav-link::after {
+  content: attr(data-icon);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110%;
+  color: #a73f49;
+  opacity: 0;
+  transition: opacity 0s 0.25s var(--timing-function);
+}
+
+.navbar-nav .nav-link:hover {
+  color: transparent;
+}
+
+.navbar-nav .nav-link:hover::before {
+  transform: translate(101%, -50%);
+}
+
+.navbar-nav .nav-link:hover::after {
+  opacity: 1;
+}
+
+.navbar-nav[data-animation=to-left] .nav-link::before {
+  transform: translate(101%, -50%);
+}
+
+.navbar-nav[data-animation=to-left] .nav-link:hover::before {
+  transform: translate(-101%, -50%);
+}
+
 .container-fluid {
   background-color: #1E736C;
   margin: 0px;
   padding: 0px;
+}
+.container-fluid .collapse .navbar-nav .nav-item {
+  display: flex;
+  flex-direction: row;
+  background-color: #08D5A3;
+  font-family: "Chakra Petch", sans-serif;
+  text-decoration: none;
+  box-sizing: content-box;
+  padding: 0;
+  margin: 2px 2px;
+  border-radius: 0.5rem;
+}
+.container-fluid .collapse .navbar-nav .nav-item .nav-link {
+  align-items: center;
+  font-size: 1rem;
 }
 .container-fluid .navbar-brand {
   display: flex;
@@ -686,30 +788,28 @@ img[alt=vaso] {
   width: 100%;
   max-width: 200px;
   justify-content: center;
+  align-items: center;
+}
+.container-fluid .navbar-brand img[alt=bemo] {
+  width: 40px;
+  max-width: 100%;
+}
+.container-fluid .navbar-brand .navar-texto {
+  font-size: 100%;
+  padding: 0px;
+  align-self: center;
+  margin: 0px;
+}
+.container-fluid .navbar-brand .navbar-brand:hover {
+  font-weight: 400px;
 }
 .container-fluid .navbar-brand .menu-index {
   font-size: 1.7rem;
 }
-.container-fluid .navbar-brand .nav-item {
-  background-color: #08D5A3;
-  font-family: "Chakra Petch", sans-serif;
-  text-decoration: none;
-  font-size: 1.5rem;
-  box-sizing: content-box;
-  padding: 0;
-  margin: 2px 2px;
-  border-radius: 0.5rem;
-}
-.container-fluid .navbar-brand .nav-item .nav-link {
-  font-size: 50px;
-}
-
-.navbar-brand:hover {
-  font-weight: 400px;
-}
 
 .nav-link:hover {
-  background-color: #58C0B6;
+  background-image: url(https://th.bing.com/th/id/R.edc28aabeed4c08e4e20fbf4f48b4faf?rik=P015CtDHC1ZsuQ&riu=http%3a%2f%2forig14.deviantart.net%2f1d04%2ff%2f2014%2f211%2f5%2f4%2fmario_walking_by_jesusache-d7t0gft.gif&ehk=EmJwcHWzIvdlfiOjR6N9PG8Y8rJslB2O1UcMUlGixEg%3d&risl=&pid=ImgRaw&r=0);
+  background-image: 100%;
   font-weight: bold;
   border-radius: 10Px;
 }

@@ -1,3 +1,5 @@
+@use 'variables';
+
 .precio {
   color: aliceblue;
   display: flex;
@@ -39,3 +41,93 @@
   inherits: true;
   initial-value: 0turn;
 }
+
+// animación menu
+
+:root {
+  --timing-function: cubic-bezier(0.82, 0.2, 0.42, 1);
+}
+
+.navbar-nav {
+  list-style: none;
+}
+
+.nav-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  background-color: #000;
+  font: 22px sans-serif;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 70px;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  display: block;
+  padding: 10px;
+  overflow: hidden;
+  transition: color 0s 0.25s var(--timing-function);
+}
+
+.navbar-nav .nav-link::before,
+.navbar-nav .nav-link::after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: variables.$color3;
+}
+
+.navbar-nav .nav-link::before {
+  content: '';
+  top: 50%;
+  transform: translate(-101%, -50%);
+  height: 50%;
+  z-index: 1;
+  background: #c56937;
+  transition: transform 0.5s var(--timing-function);
+}
+
+.navbar-nav .nav-link::after {
+  content: attr(data-icon);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100%)+10;
+  color: #a73f49;
+  opacity: 0;
+  transition: opacity 0s 0.25s var(--timing-function);
+}
+
+.navbar-nav .nav-link:hover {
+  color: transparent;
+}
+
+.navbar-nav .nav-link:hover::before {
+  transform: translate(101%, -50%);
+}
+
+.navbar-nav .nav-link:hover::after {
+  opacity: 1;
+}
+
+.navbar-nav[data-animation="to-left"] .nav-link::before {
+  transform: translate(101%, -50%);
+}
+
+.navbar-nav[data-animation="to-left"] .nav-link:hover::before {
+  transform: translate(-101%, -50%);
+}
+

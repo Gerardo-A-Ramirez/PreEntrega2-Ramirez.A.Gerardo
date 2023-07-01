@@ -5,6 +5,28 @@
     background-color: variables.$color2;
     margin: 0px;
     padding: 0px;
+    .collapse{
+        .navbar-nav{
+            .nav-item {
+                display: flex;
+                flex-direction: row;
+                background-color: #08D5A3;
+                font-family: 'Chakra Petch', sans-serif;
+                text-decoration: none;
+                // font-size: 1.5rem;
+                box-sizing: content-box;
+                padding: 0;
+                margin: 2px 2px;
+                border-radius: 0.5rem;
+
+                .nav-link {
+                    align-items: center;
+                    font-size: 1rem
+                }
+            }
+        }
+    }
+
     .navbar-brand {
         display: flex;
         font-family: 'Chakra Petch', sans-serif;
@@ -13,42 +35,38 @@
         width: 100%;
         max-width: 200px;
         justify-content: center;
-    
+        align-items: center;
+        
+        img[alt="bemo"]{
+            width: 40px;
+            max-width: 100%;
+        }
+        .navar-texto{
+            font-size: 100%;
+            padding: 0px;
+align-self: center;
+margin: 0px;
+        }
+        .navbar-brand:hover {
+            font-weight: 400px;
+    }
+    .navbar-brand:hover {
+    }
+
+
         .menu-index {
             font-size: 1.7rem;
-    
-        }
-        .nav-item {
-            background-color: #08D5A3;
-            font-family: 'Chakra Petch', sans-serif;
-            text-decoration: none;
-            font-size: 1.5rem;
-            box-sizing: content-box;
-            padding: 0;
-            margin: 2px 2px;
-            border-radius: 0.5rem;
-            .nav-link {
-        font-size: 50px;
-            }
-            
+
         }
     }
 }
 
-
-
-
-
-.navbar-brand:hover {
-    font-weight: 400px;
-}
-
 .nav-link:hover {
-    background-color: variables.$color3;
+    background-image: url(https://th.bing.com/th/id/R.edc28aabeed4c08e4e20fbf4f48b4faf?rik=P015CtDHC1ZsuQ&riu=http%3a%2f%2forig14.deviantart.net%2f1d04%2ff%2f2014%2f211%2f5%2f4%2fmario_walking_by_jesusache-d7t0gft.gif&ehk=EmJwcHWzIvdlfiOjR6N9PG8Y8rJslB2O1UcMUlGixEg%3d&risl=&pid=ImgRaw&r=0);
+    background-image: calc(100%);
     font-weight: bold;
     border-radius: 10Px;
 }
-
 
 
 .d-flex {
