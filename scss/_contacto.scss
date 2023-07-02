@@ -152,14 +152,16 @@
         flex-direction: column;
 
         .card-body {
-            max-width: 400px;
+            max-width: 600px;
+            max-width: calc(100%)-2;
             max-height: 100%;
         }
     }
 
     .section-formulario {
-        max-width: 400px;
-        max-height: 100%;
+        max-width: 600px;
+            max-width: calc(100%)-2;
+            max-height: 100%;
     }
 
 
@@ -174,16 +176,19 @@
 
 
         .h2_sectionRedes {
-            max-width: 400px;
+            max-width: 600px;
             max-height: 100%;
+            max-width: calc(100%)-2;
         }
 
         .div_redes {
             flex-direction: column;
+            max-width: 600px;
+            max-width: calc(100%)-2;
 
             .card_contacto {
                 margin: auto;
-
+                max-width: 600px;
             }
         }
     }

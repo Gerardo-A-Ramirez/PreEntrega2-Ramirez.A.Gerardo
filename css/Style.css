@@ -129,11 +129,13 @@
     flex-direction: column;
   }
   .seccion-contacto .card-body {
-    max-width: 400px;
+    max-width: 600px;
+    max-width: 98%;
     max-height: 100%;
   }
   .section-formulario {
-    max-width: 400px;
+    max-width: 600px;
+    max-width: 98%;
     max-height: 100%;
   }
   /* Estilado de las imágenes QR */
@@ -142,14 +144,18 @@
     align-items: flex-end;
   }
   .section-Redes .h2_sectionRedes, .section-Redes .div_redes .card_contacto .h2_sectionRedes {
-    max-width: 400px;
+    max-width: 600px;
     max-height: 100%;
+    max-width: 98%;
   }
   .section-Redes .div_redes, .section-Redes .div_redes .card_contacto .div_redes {
     flex-direction: column;
+    max-width: 600px;
+    max-width: 98%;
   }
   .section-Redes .div_redes .card_contacto {
     margin: auto;
+    max-width: 600px;
   }
 }
 /* Maquetación footer */
