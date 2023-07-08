@@ -2,7 +2,37 @@
 
 .body-index {
     background-image: url(../Imagenes/LOTR.gif);
+    background-size:auto;
 }
+
+// Estilo banner
+
+.banner {
+    img[alt=banner] {
+        width: 1200px;
+        margin: auto;
+        box-sizing: 100vh;
+        display: flex;
+        border-radius: 1em;
+        object-fit: scale-down;
+        background-size: contain;
+        
+    }
+
+    img[alt=banner-query] {
+        display: none;
+        width: 400px;
+        align-self: center;
+        margin: auto;
+        box-sizing: 100vh;
+        border-radius: 1em;
+        object-fit: scale-down;
+        background-size: contain;
+    }
+}
+
+// Estilo imágenes
+
 
 .productosIndex {
     max-width: calc(100%)-4;
@@ -215,6 +245,26 @@
 /* Querys */
 
 @media screen and (max-width: 1000px) {
+    .body-index {
+        background-size:contain;
+    }
+
+    .banner {
+        img[alt=banner-query] {
+            display: flex;
+            align-self: center;
+            margin: auto;
+            box-sizing: 100vh;
+            border-radius: 1em;
+            object-fit: scale-down;
+            background-size: contain;
+        }
+
+        .bannerImg {
+            display: none;
+        }
+    }
+
     img[alt=banner-query] {
         display: flex;
         align-self: center;
