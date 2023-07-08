@@ -55,8 +55,6 @@
   margin: 10px;
   display: block;
   font-size: 1.5em;
-  font-family: "Chakra Petch", sans-serif;
-  font-family: "Permanent Marker", cursive;
 }
 .section-formulario .form-contacto .mb-3 .label-contacto .form-text {
   font-size: 1em;
@@ -158,6 +156,19 @@
     max-width: 600px;
   }
 }
+.bannerGif {
+  width: 100%;
+  max-width: 95%;
+  margin: auto;
+}
+.bannerGif img[alt="Imagen lord Of The Ring"] {
+  width: 100%;
+  max-width: 100%;
+  object-fit: fill;
+  border: solid;
+  border-radius: 10px;
+}
+
 /* Maquetación footer */
 footer {
   background-color: #000;
@@ -412,18 +423,6 @@ footer {
     background-size: contain;
   }
   .banner .bannerImg {
-    display: none;
-  }
-  img[alt=banner-query] {
-    display: flex;
-    align-self: center;
-    margin: auto;
-    box-sizing: 100vh;
-    border-radius: 1em;
-    object-fit: scale-down;
-    background-size: contain;
-  }
-  .bannerImg {
     display: none;
   }
   .ImagenesIndex {

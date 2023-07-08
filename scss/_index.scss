@@ -265,20 +265,6 @@
         }
     }
 
-    img[alt=banner-query] {
-        display: flex;
-        align-self: center;
-        margin: auto;
-        box-sizing: 100vh;
-        border-radius: 1em;
-        object-fit: scale-down;
-        background-size: contain;
-    }
-
-    .bannerImg {
-        display: none;
-    }
-
     .ImagenesIndex {
         display: flex;
         flex-direction: column;

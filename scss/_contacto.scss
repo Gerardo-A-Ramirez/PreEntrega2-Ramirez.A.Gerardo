@@ -61,9 +61,6 @@
                 margin: 10px;
                 display: block;
                 font-size: 1.5em;
-                font-family: 'Chakra Petch', sans-serif;
-                font-family: 'Permanent Marker', cursive;
-
                 .form-text {
                     font-size: 1em;
                 }
@@ -72,7 +69,6 @@
 
     }
 }
-
 
 /* Estilado de las imágenes QR */
 
@@ -192,5 +188,18 @@
             }
         }
     }
+}
 
+.bannerGif{
+    width: 100%;
+    max-width:calc(100%)-5;
+    margin: auto;
+
+    img[alt="Imagen lord Of The Ring"]{
+        width: 100%;
+        max-width: 100%;
+        object-fit: fill;
+        border: solid;
+        border-radius: 10px;
+    }
 }
