@@ -1,79 +1,182 @@
 @use 'variables';
+@use 'mixin';
 
 /* Maquetación Index */
 
 .body-index {
-    background-color: variables.$color2;
-    padding: 0px;
-    margin: 0px;
+  background-image: url(../Imagenes/LOTR.webp);
+
+  background-size: auto;
+  padding: 0px;
+  margin: 0px;
 }
 
-/* Estilo imágenes */
-.producto {
-    max-width: 100%;
-    max-height: 100%;
-}
+/* Estilo Banner */
 
 img[alt=banner] {
-    width: 1200px;
-    margin: auto;
-    box-sizing: 100vh;
-    display: flex;
-    border-radius: 1em;
-    object-fit: scale-down;
-    background-size: contain
+  width: 1200px;
+  margin: auto;
+  box-sizing: 100vh;
+  display: flex;
+  border-radius: 1em;
+  object-fit: scale-down;
+  background-size: contain
 }
 
 img[alt=banner-query] {
-    display: none;
-    width: 400px;
-    align-self: center;
-    margin: auto;
-    box-sizing: 100vh;
-    border-radius: 1em;
-    object-fit: scale-down;
-    background-size: contain;
-}
-
-/* Query banner */
-
-@media screen and (max-width: 1000px) {
-    img[alt=banner-query] {
-        display: flex;
-        align-self: center;
-        margin: auto;
-        box-sizing: 100vh;
-        border-radius: 1em;
-        object-fit: scale-down;
-        background-size: contain;
-    }
-
-    .bannerImg {
-        display: none;
-    }
+  display: none;
+  width: 400px;
+  align-self: center;
+  margin: auto;
+  box-sizing: 100vh;
+  border-radius: 1em;
+  object-fit: scale-down;
+  background-size: contain;
 }
 
 // estilo imágenes
 
+.productosIndex {
+  max-width: calc(100%)-4;
+  margin: auto;
+  margin-top: 5px;
+  
 
-.ImagenesIndex{
-    display: flex;
-    flex-direction: row;
+  .indexDescription {
+    width: 100%;
+    margin: auto;
+    max-width: fit-content;
+    padding: 3px;
+    margin-left: 2px;
+    font-size: 1.2rem;
+    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+    margin-bottom: 20px;
+  }
+
+  .productoTitulo {
+    width: fit-content;
+    padding: 3px;
+    max-width: 100%;
+    margin-left: 2px;
+    font-size: 1.2rem;
+    border-bottom: solid;
+    border-right: solid;
+    @include mixin.background;
+    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+  }
+}
+
+.ImagenesIndex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .cardProducto {
   font-family: 'Raleway', Arial, sans-serif;
   position: relative;
   overflow: hidden;
-  margin: 10px;
+  margin: 5px;
   min-width: 230px;
   max-width: 315px;
-  width: 100%;
+  width: 800px;
+  max-width: 100%;
   color: #ffffff;
   text-align: center;
   font-size: 16px;
   background-color: #000000;
+  display: flex;
+  justify-content: center;
+
+  img {
+    max-width: 100%;
+    backface-visibility: hidden;
+    vertical-align: top;
+    opacity: 0.9;
+    object-fit:fill;
+  }
+
+  .titleIndex {
+    position: absolute;
+    top: 58%;
+    left: 25px;
+    padding: 5px 10px 10px;
+
+    &:before {
+      top: 0;
+      left: 10px;
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+
+    &:after {
+      bottom: 0;
+      right: 10px;
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+
+    div {
+      &:before {
+        top: 10px;
+        right: 0;
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+      }
+
+      &:after {
+        bottom: 10px;
+        left: 0;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+      }
+    }
+  }
+
+  .cardTitulo {
+    font-weight: 400;
+    border: solid;
+    background-color: #000000;
+    padding: 2px;
+  }
+
+  .cardDescription {
+    display: block;
+    font-weight: 700;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    color: #000000;
+  }
+
+  figcaption {
+    position: absolute;
+    bottom: 42%;
+    left: 25px;
+    text-align: left;
+    opacity: 0;
+    padding: 5px 60px 5px 10px;
+    font-size: 0.8em;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+
+    .cardTitulo {
+      .cardDescription {
+        margin: 0;
+      }
+    }
+  }
+
+  a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 }
+
 .cardProducto *,
 .cardProducto *:before,
 .cardProducto *:after {
@@ -82,94 +185,31 @@ img[alt=banner-query] {
   -webkit-transition: all 0.55s ease;
   transition: all 0.55s ease;
 }
-.cardProducto img {
-  max-width: 100%;
-  backface-visibility: hidden;
-  vertical-align: top;
-  opacity: 0.9;
-}
-.cardProducto .title {
-  position: absolute;
-  top: 58%;
-  left: 25px;
-  padding: 5px 10px 10px;
-}
-.cardProducto .title:before,
-.cardProducto .title:after {
+
+.cardProducto .titleIndex:before,
+.cardProducto .titleIndex:after {
   height: 2px;
   width: 400px;
   position: absolute;
   content: '';
   background-color: #ffffff;
 }
-.cardProducto .title:before {
-  top: 0;
-  left: 10px;
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-}
-.cardProducto .title:after {
-  bottom: 0;
-  right: 10px;
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-}
-.cardProducto .title div:before,
-.cardProducto .title div:after {
+
+.cardProducto .titleIndex div:before,
+.cardProducto .titleIndex div:after {
   width: 2px;
   height: 300px;
   position: absolute;
   content: '';
   background-color: #ffffff;
 }
-.cardProducto .title div:before {
-  top: 10px;
-  right: 0;
-  -webkit-transform: translateY(100%);
-  transform: translateY(100%);
-}
-.cardProducto .title div:after {
-  bottom: 10px;
-  left: 0;
-  -webkit-transform: translateY(-100%);
-  transform: translateY(-100%);
-}
-.cardProducto .CardTitulo,
-.cardProducto h4 {
+
+.cardProducto .cardTitulo,
+.cardProducto .cardDescription {
   margin: 0;
   text-transform: uppercase;
 }
-.cardProducto .cardTitulo {
-  font-weight: 400;
-}
-.cardProducto h4 {
-  display: block;
-  font-weight: 700;
-  background-color: #ffffff;
-  padding: 5px 10px;
-  color: #000000;
-}
-.cardProducto figcaption {
-  position: absolute;
-  bottom: 42%;
-  left: 25px;
-  text-align: left;
-  opacity: 0;
-  padding: 5px 60px 5px 10px;
-  font-size: 0.8em;
-  font-weight: 500;
-  letter-spacing: 1.5px;
-}
-.cardProducto figcaption p {
-  margin: 0;
-}
-.cardProducto a {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
+
 .cardProducto:hover img,
 .cardProducto.hover img {
   zoom: 1;
@@ -177,27 +217,60 @@ img[alt=banner-query] {
   -webkit-opacity: 0.35;
   opacity: 0.35;
 }
-.cardProducto:hover .title:before,
-.cardProducto.hover .title:before,
-.cardProducto:hover .title:after,
-.cardProducto.hover .title:after,
-.cardProducto:hover .title div:before,
-.cardProducto.hover .title div:before,
-.cardProducto .title div:after,
-.cardProducto .title div:after {
+
+.cardProducto:hover .titleIndex:before,
+.cardProducto.hover .titleIndex:before,
+.cardProducto:hover .titleIndex:after,
+.cardProducto.hover .titleIndex:after,
+.cardProducto:hover .titleIndex div:before,
+.cardProducto.hover .titleIndex div:before,
+.cardProducto .titleIndex div:after,
+.cardProducto .titleIndex div:after {
   -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
 }
-.cardProducto .title:before,
-.cardProducto .title:before,
-.cardProducto .title:after,
-.cardProducto .title:after {
+
+.cardProducto .titleIndex:before,
+.cardProducto .titleIndex:before,
+.cardProducto .titleIndex:after,
+.cardProducto .titleIndex:after {
   -webkit-transition-delay: 0.15s;
   transition-delay: 0.15s;
 }
+
 .cardProducto:hover figcaption,
-figure.snip1477.hover figcaption {
+.cardProducto.hover figcaption {
   opacity: 1;
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
+}
+
+/* Querys */
+
+@media screen and (max-width: 1000px) {
+  img[alt=banner-query] {
+    display: flex;
+    align-self: center;
+    margin: auto;
+    box-sizing: 100vh;
+    border-radius: 1em;
+    object-fit: scale-down;
+    background-size: contain;
+  }
+
+  .bannerImg {
+    display: none;
+  }
+  .ImagenesIndex{
+    display: flex;
+    flex-direction: column;
+    .cardProducto{
+      margin: auto;
+      margin-bottom: 10px;
+      .img{
+        margin: auto;
+        object-fit:fill;
+      }
+    }
+  }
 }

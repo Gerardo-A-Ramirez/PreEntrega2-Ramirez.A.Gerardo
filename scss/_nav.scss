@@ -65,10 +65,8 @@
     }
 
     .navbar-toggler {
-
         width: 100%;
-        max-width: 130px;
-
+        max-width: 95px;
         .span-button {
             width: 100%;
             max-width: 100%;
@@ -76,6 +74,7 @@
             img[alt="pikachu"] {
                 object-fit: fill;
                 width: 100%;
+                z-index: 1;
             }
         }
     }
