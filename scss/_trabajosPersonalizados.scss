@@ -4,7 +4,7 @@
 /* Personalización de Trabajos personalizados */
 /* Carousel de imagenes */
 
-.body_trabajos{
+.body_trabajos {
     height: 100%;
     max-height: 100%;
 }
@@ -23,13 +23,15 @@
     min-height: 805px;
     align-items: center;
     justify-content: center;
-    #carouselExampleFade{
+
+    #carouselExampleFade {
         display: flex;
         flex-direction: column;
         height: 100%;
         max-width: 100%;
         align-items: flex-start;
         justify-content: center;
+
         .Texto-Trabajos {
             font-size: 24px;
             border: solid;
@@ -39,26 +41,29 @@
             padding-left: 5px;
             width: calc(100%)-10;
             max-width: 100%;
-           margin: auto;
-        
+            margin: auto;
+
             a {
                 text-decoration: none;
             }
-        
+
             &:hover {
                 background-color: variables.$color1;
             }
         }
+
         .carousel-inner {
             width: 100%;
             max-width: 700px;
             margin: auto;
+
             .carousel-item {
                 display: flex;
                 max-width: 100%;
                 height: 780px;
                 width: 100%;
                 flex-direction: column;
+
                 .label-personalizados {
                     font-size: 1.5rem;
                     border: groove;
@@ -66,52 +71,45 @@
                     background-color: variables.$color3;
                     margin: 5px;
                     padding: 10px;
-                    
+
                 }
+
                 img[alt=imagen-carousel] {
                     width: 100%;
                     height: 100%;
                     margin: 0px;
                     border: solid;
-                   
+
                 }
+            }
+
+            .botonesDireccionales {
+                align-items: center;
+                justify-content: center;
+            }
         }
-        .botonesDireccionales{
-            align-items: center;
-            justify-content: center;
-        }}
     }
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* Query Carrousel */
 
-// @media screen and (max-width: 600px) {
-//     .section-carusel {
-//         max-width: 100%;
-//         margin: auto;
-//         #carouselExampleFade{
-//             .Texto-Trabajos{
-//                 max-width: calc(100%)-2;
-//                 margin: auto;
-//             }
+@media screen and (max-width: 600px) {
+    .section-carusel {
+        max-width: 100%;
+        margin: auto;
+        #carouselExampleFade{
+            .Texto-Trabajos{
+                max-width: calc(100%)-2;
+                margin: auto;
+            }
 
-//         }
+        }
 
-//     }
+    }
 
-//     #carouselExampleFade div {
-//         width: 400px;
-//     }
+    #carouselExampleFade div {
+        width: 400px;
+    }
 
-// }
+}

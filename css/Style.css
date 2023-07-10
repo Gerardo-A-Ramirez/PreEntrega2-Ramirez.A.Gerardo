@@ -518,7 +518,21 @@ footer {
 }
 
 /* Query Carrousel */
+@media screen and (max-width: 600px) {
+  .section-carusel {
+    max-width: 100%;
+    margin: auto;
+  }
+  .section-carusel #carouselExampleFade .Texto-Trabajos {
+    max-width: 98%;
+    margin: auto;
+  }
+  #carouselExampleFade div {
+    width: 400px;
+  }
+}
 .p_carrusel--titulo {
+  max-width: 800px;
   background-color: #000;
   color: #ffffff;
   font-size: 2.5rem;
@@ -530,6 +544,7 @@ footer {
   text-align: center;
   margin-bottom: 10px;
   padding: 3px;
+  font-size: 2rem;
 }
 
 #Seccion-productos .titulo-productos {
