@@ -158,7 +158,7 @@
 }
 .bannerGif {
   width: 100%;
-  max-width: 95%;
+  max-width: 700px;
   margin: auto;
 }
 .bannerGif img[alt="Imagen lord Of The Ring"] {
@@ -519,9 +519,17 @@ footer {
 
 /* Query Carrousel */
 .p_carrusel--titulo {
+  background-color: #000;
+  color: #ffffff;
   font-size: 2.5rem;
   margin-left: 10px;
   width: 90%;
+  border: solid;
+  border-radius: 50Px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 3px;
 }
 
 #Seccion-productos .titulo-productos {
