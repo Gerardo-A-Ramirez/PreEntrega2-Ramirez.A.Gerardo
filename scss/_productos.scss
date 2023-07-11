@@ -3,8 +3,8 @@
 
 // Estilos productos
 
-.p_carrusel--titulo {
-    max-width: 800px;
+.productos_titulo {
+    max-width: 700px;
     background-color: #000;
     color: #ffffff;
     font-size: 2.5rem;
@@ -16,7 +16,8 @@
     text-align: center;
     margin-bottom: 10px;
     padding: 3px;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    margin-top: 10px;
 }
 
 #Seccion-productos {
@@ -26,10 +27,13 @@
         align-self: flex-start;
         margin-left: 10px;
         margin-right: 10px;
+        margin-top: 10px;
         border-right: solid;
         border-bottom: solid;
         width: 100%;
         max-width: calc(100%)-10;
+        background-color: #47d753;
+        border-radius: 10px;
     }
 
     .seccion-imagenes {
@@ -43,11 +47,12 @@
 
         .card {
             display: flex;
-            width: 450px;
+            width: 100%;
             border: solid;
             border-radius: 10px;
             margin: auto;
-            max-width: 100%;
+            max-width: 410px;
+            height: 900px;
 
             .img-container {
                 height: 480px;
