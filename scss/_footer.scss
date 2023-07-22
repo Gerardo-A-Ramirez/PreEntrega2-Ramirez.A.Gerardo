@@ -20,3 +20,13 @@ footer {
     text-decoration: none;
     color: aliceblue
 }
+
+blockquote {
+    border-radius: 10px;
+    
+    p{
+        color: #ffffff;
+        font-size: 0.9rem;
+        padding: 2px
+    }
+}

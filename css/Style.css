@@ -189,6 +189,15 @@ footer {
   color: aliceblue;
 }
 
+blockquote {
+  border-radius: 10px;
+}
+blockquote p {
+  color: #ffffff;
+  font-size: 0.9rem;
+  padding: 2px;
+}
+
 .body-index {
   background-image: url(../Imagenes/LOTR.gif);
   background-size: auto;
